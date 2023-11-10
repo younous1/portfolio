@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Younous</title>
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">&lsaquo;/<span style="color: #009cf7;">y</span><span>s</span>&rsaquo;</a>
+        <!--<a href="#" class="logo"><img src="xana2.png"></a>-->
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li> 
+            <li><a href="#services">Skills</a></li> 
+            <li><a href="#career">Career</a></li> 
+            <li><a href="#portfolio">Projects</a></li> 
+            <li><a href="#contact">Contact</a></li>
+        </ul> 
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Younous Seghir</h2>
+            <h3>My jobs : <span id="bio" style="color: #f79000;"></span></h3>
+            <a href="#services" class="btn">Discover</a>
+        </div>
+        <img src="images/itdev2.png" class="men">
+    </section>
+    <section id="services">
+        <div class="secText">
+            <h2>My skills</h2><br>
+            <p>Thanks to my education, my professionnal experience and my personnal investment, I developped several skills during the last years.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/web app development.png">
+                <h3><b>Web Developpement</b></h3>
+                <p>Html/CSS, PHP, Javascript, Node.JS, WordPress</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/coding.png">
+                <h3><b>Software Engineering</b></h3>
+                <p>Python, Java, C++, Pascal, Data (SQL, NoSQL), IS Architecture</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/project.png">
+                <h3><b>Project Management</b></h3>
+                <p>Agile method (Scrum,Kanban), Tests and Quality</p>
+            </div>
+            <div class="servicesBx">
+                <img src="images/computer.png">
+                <h3><b>Systems and Networks</b></h3>
+                <p>Linux, Ethical Hacking and common knowledge in networks</p>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#contact" class="btn">Hire me</a>
+        </div>
+    </section> 
+    <section id="career">
+    </section>
+    <section id="portfolio" >
+        <div class="secText">
+            <h2>My projects</h2><br>
+            <p>I had the opportunity to develop several projects during my scolar, professionnal and personnal life. Here they are :</p>
+        </div>
+        <!--<div class="content">
+            <div class="imgBx">
+                <img src="xana.png">
+            </div>
+            <div class="imgBx">
+                <img src="xana.png">
+            </div>
+            <div class="imgBx">
+                <img src="xana.png">
+            </div>
+            <div class="imgBx">
+                <img src="xana.png">
+            </div>
+            <div class="imgBx">
+                <img src="xana.png">
+            </div>
+            <div class="imgBx">
+                <img src="xana.png">
+            </div>
+        </div>-->
+        <div class="container">
+            <div class="card" style="--clr: #f79000">
+                <div class="imgBx2">
+                    <img src="images/savoieactivity2.png">
+                </div>
+                <div class="content2">
+                    <h2>Extranet et Application Weiss</h2>
+                    <p>Développement et amélioration de l'extranet (PHP,JS,SQL) et de l'application (Python) de l'entreprise. Développeur et chef du projet</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="--clr:#f79000">
+                <div class="imgBx2">
+                    <img src="images/savoieactivity2.png">
+                </div>
+                <div class="content2">
+                    <h2>SIGE</h2>
+                    <p>Interface web de diagnostic pour centrales photovoltaïques en Phyton et Matlab, Développeur</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="--clr:#f79000">
+                <div class="imgBx2">
+                    <img src="images/savoieactivity2.png">
+                </div>
+                <div class="content2">
+                    <h2>Tech A Way</h2>
+                    <p>Site de recrutement, développé en HTML, CSS, JS(Vue.JS) et PHP, pour l'entreprise Tech A Way. 7 pers. Développement et conduite du projet</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#home" class="btn">See more</a>
+        </div>
+    </section> 
+    <section id="contact">
+        <div class="secText">
+            <h2>Contact me</h2><br>
+            <p>Want to ask a question, hire me or anything else? Don't hesitate.</p>
+        </div>
+        <div class="content">
+            <a href="#" target="_blank">
+                <ion-icon name="mail"></ion-icon>younous.seghir@yahoo.fr
+            </a>
+            <a href="https://fr.linkedin.com/in/younous-seghir-3a36aa22b" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>LinkedIn
+            </a>
+            <a href="https://quran.com" target="_blank">
+                <ion-icon name="book"></ion-icon>Bismillah
+            </a>
+            <a href="https://github.com/younous1" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>younous1
+            </a>
+        </div>
+        <div class="center">
+            <p class="copyrights">Copyrights &#9400; 2023 <a href="#">Younous Seghir</a>. All Right Reserved</p>
+        </div>
+    </section>
+
+
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i)=>
+            i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) => 
+        i.addEventListener('click',active));
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#bio', {
+          strings: ['IT Developper', 'Project Manager', 'Support and Quality'],
+          typeSpeed: 100,
+          loop : true,
+          backSpeed : 50,
+          backDelay : 1000
+        });
+    </script>
+</body> 
+</html>
