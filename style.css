@@ -267,7 +267,7 @@ header ul li a:hover
     width: 350px;
     height: 300px;
     background: #222;
-    border-radius: 8px;
+    /*border-radius: 8px;*/
     box-shadow:0 35px 80px rgba(0,0,0,0.15);
     transition: 0.5s
 }
@@ -282,7 +282,7 @@ header ul li a:hover
     width: 300px;
     height: 220px;
     background:#2e2f34;
-    border-radius: 12px;
+    /*border-radius: 12px;*/
     overflow: hidden;
     transition: 0.5s;
 }
@@ -325,7 +325,7 @@ header ul li a:hover
 }
 #portfolio .container .card .content2 p
 {
-    color: #fff;
+    color: #aaa;
 }
 #portfolio .container .card .content2 a
 {
@@ -334,7 +334,7 @@ header ul li a:hover
     display: inline-block;
     padding: 12px 25px;
     background: #006aff;
-    color: #fff;
+    color: #222;
     font-size: 500;
     text-decoration: none;
     border-radius: 8px;
