@@ -255,7 +255,7 @@ header ul li a:hover
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
+    gap: 50px 50px;
     padding: 50px 50px;
 }
 #portfolio .container .card
