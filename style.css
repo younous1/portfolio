@@ -170,6 +170,28 @@ header ul li a:hover
     font-size: 1.1em;
     line-height: 1.5em;
 }
+.secText ul
+{
+    position: relative;
+    display: flex;
+    gap: 40px;
+    top: 15px;
+}
+.secText ul li
+{
+    max-width: 700px;
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    list-style: none;
+}
+.secText ul li img
+{
+    max-width: 25px;
+    top: 6px;
+    position: relative;
+}
 #services .content
 {
     display: grid;
@@ -233,6 +255,7 @@ header ul li a:hover
 .timeline-items{
     max-width: 1000px;
     margin: auto;
+    top: 50px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
