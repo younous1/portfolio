@@ -269,10 +269,38 @@ header ul li a:hover
     border-radius: 50%;
     top: 10px;
 }
+.timeline-date{
+    font-size: 18px;
+    color: #f79000;
+    margin: 6px 0 15px;
+}
 .timeline-content{
     background-color: #222;
     padding: 30px;
     border-radius: 5px;
+}
+.timeline-content h3{
+    font-size: 20px;
+    color: #009cf7;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.timeline-content p{
+    font-size: 16px;
+    color: #aaa;
+    /*font-weight: 300;*/
+    line-height: 22px;
+}
+.timeline-content p span{
+    font-weight: bold; 
+    color: #d7d7d7;
+}
+.timeline-content ion-icon
+{
+    color: #d7d7d7;
+    position: relative;
+    top: 3px;
 }
 #portfolio
 {
@@ -572,6 +600,24 @@ header ul li a:hover
     #contact .content a
     {
         height: 80px;
+    }
+    .timeline-items::before
+    {
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd)
+    {
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even)
+    {
+        padding-left: 37px;
+    }
+    .timeline-dot
+    {
+        left: 0;
     }
 
 }
