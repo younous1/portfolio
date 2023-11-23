@@ -265,7 +265,7 @@ header ul li a:hover
     position: absolute;
     width: 2px;
     height: 100%;
-    background-color: #34353a;
+    background-color: #4a4b51;
     left: calc(50% - 1px);
 }
 .timeline-item{
