@@ -644,3 +644,40 @@ header ul li a:hover
     }
 
 }
+/**************** SNAKE *********************/
+#snakePage
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #222;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    padding: 100px;
+}
+#snakeCanva
+{
+	margin-top: 1px;
+}
+.difficulty
+{
+	list-style: none;
+	text-decoration: none;
+	margin-top: 50px;
+	color: #fff;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+#snakeCanva canvas {
+    width: 100%; 
+    height: auto; 
+    max-width: 900px; 
+    border: 15px solid rgb(0, 156, 247); 
+    margin: 5px auto;
+    display: block;
+    background-color: rgb(52, 53, 58);
+}
