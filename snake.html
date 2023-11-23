@@ -8,15 +8,13 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">&lsaquo;/<span style="color: #009cf7;">y</span><span>s</span>&rsaquo;</a>
-        <!--<a href="#" class="logo"><img src="xana2.png"></a>-->
+        <a href="index.html" class="logo">&lsaquo;/<span style="color: #009cf7;">y</span><span>s</span>&rsaquo;</a>
         <div class="menuToggle"></div>
         <ul class="nav">
-            <li class="active"><a href="#home">Home</a></li> 
-            <li><a href="#services">Skills</a></li> 
-            <li><a href="#career">Career</a></li> 
-            <li><a href="#portfolio">Projects</a></li> 
-            <li><a href="#contact">Contact</a></li>
+            <li><a>Dirrection : Z,Q,S,D</a></li> 
+            <li><a>Normal : Press &</a></li> 
+            <li><a>Difficile : Press é</a></li> 
+            <li><a>Hardcore : Press "</a></li>
         </ul> 
     </header>
     <section id="snakePage">
@@ -24,14 +22,26 @@
             <script src="script.js"></script>
         </div>
     
-        <ul class="difficulty">
-            <li><h1>Dirrection : Z,Q,S,D</p></li>
-            <li><h1>Normal : Press &</p></li>
-            <li><h1>Difficile : Press é</p></li>
-            <li><h1>Hardcore : Press "</p></li>
-        </ul>
     </section>
     
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i)=>
+            i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) => 
+        i.addEventListener('click',active));
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
     
