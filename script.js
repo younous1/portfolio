@@ -274,14 +274,17 @@ window.onload = function(){
                 start();
                 return;
             case 97:
+            case 49:
                 mode=1;
                 restart();
                 return;
             case 98:
+            case 50:
                 mode=2;
                 restart();
                 return;
             case 99:
+            case 51:
                 mode=3;
                 restart();
                 return;
