@@ -352,7 +352,7 @@ header ul li a:hover
     align-items: center;
     flex-wrap: wrap;
     gap: 50px 50px;
-    padding: 50px 50px;
+    padding: 50px 0px;
 }
 #portfolio .container .card
 {
@@ -524,7 +524,7 @@ header ul li a:hover
     #portfolio,
     #contact
     {
-        padding: 100px 50px 50px;
+        padding: 100px 40px 50px;
     }
     #services .content,
     #career .content,
