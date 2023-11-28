@@ -11,10 +11,15 @@
         <a href="index.html" class="logo">&lsaquo;/<span style="color: #009cf7;">y</span><span>s</span>&rsaquo;</a>
         <div class="menuToggle"></div>
         <ul class="nav">
-            <li><a>Dirrection : Z,Q,S,D</a></li> 
-            <li><a>Normal : Press 1</a></li> 
-            <li><a>Difficile : Press 2</a></li> 
-            <li><a>Hardcore : Press 3</a></li>
+            <li><a>Dirrection : 
+                <button class="bouton_simple">Z</button>
+                <button class="bouton_simple">Q</button>
+                <button class="bouton_simple">S</button>
+                <button class="bouton_simple">D</button>
+            </a></li> 
+            <li><a>Normal : <button class="bouton_simple">1</button></a></li> 
+            <li><a>Difficult : <button class="bouton_simple">2</button></a></li> 
+            <li><a>Hardcore : <button class="bouton_simple">3</button></a></li>
         </ul> 
     </header>
     <section id="snakePage">
@@ -26,20 +31,43 @@
     
     <script>
         let list = document.querySelectorAll('.nav li');
-        function active(){
-            list.forEach((i)=>
-            i.classList.remove('active'));
-            this.classList.add('active');
+    
+        function activateListItem(event) {
+            // Supprime la classe "active" de tous les éléments de la liste
+            
+    
+            // Vérifie la touche pressée et active l'élément correspondant
+            switch (event.key.toUpperCase()) {
+                case '&':
+                case '1':
+                    list.forEach((li) => li.classList.remove('active'));
+                    list[1].classList.add('active'); // "Normal"
+                    break;
+                case 'é':
+                case '2':
+                    list.forEach((li) => li.classList.remove('active'));
+                    list[2].classList.add('active'); // "Difficult"
+                    break;
+                case '"':
+                case '3':
+                    list.forEach((li) => li.classList.remove('active'));
+                    list[3].classList.add('active'); // "Hardcore"
+                    break;
+                // Ajoute d'autres cas si nécessaire
+            }
         }
-        list.forEach((i) => 
-        i.addEventListener('click',active));
-
+    
+        // Ajoute un gestionnaire d'événements pour l'événement keydown sur la fenêtre
+        window.addEventListener('keydown', activateListItem);
+    
         let menuToggle = document.querySelector('.menuToggle');
         let header = document.querySelector('header');
-        menuToggle.onclick = function(){
+    
+        menuToggle.onclick = function() {
             header.classList.toggle('active');
         }
     </script>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

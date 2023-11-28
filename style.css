@@ -681,3 +681,13 @@ header ul li a:hover
     display: block;
     background-color: rgb(52, 53, 58);
 }
+button {
+    background-color: var(--grey);
+    border-color: var(--grey);
+    color: white;
+    font-size: 1.1em;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

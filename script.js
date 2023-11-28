@@ -78,11 +78,11 @@ window.onload = function(){
         ctx.lineWidth = 5;
         var centreX = canvasWidth / 2;
         var centreY = canvasHeight / 2;
-        ctx.strokeText("Perdu!", centreX, centreY - 180);
-        ctx.fillText("Perdu!", centreX, centreY - 180);
+        ctx.strokeText("Game Over!", centreX, centreY - 180);
+        ctx.fillText("Game Over!", centreX, centreY - 180);
         ctx.font = "bold 30px sans-serif";
-        ctx.strokeText("Appuyer sur la touche R pour rejouer", centreX, centreY - 120);
-        ctx.fillText("Appuyer sur la touche R pour rejouer", centreX, centreY - 120);
+        ctx.strokeText("Press R to play again", centreX, centreY - 120);
+        ctx.fillText("Press R to play again", centreX, centreY - 120);
         ctx.restore();
     }
 
