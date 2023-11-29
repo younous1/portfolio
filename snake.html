@@ -37,24 +37,25 @@
             
     
             // Vérifie la touche pressée et active l'élément correspondant
-            switch (event.key.toUpperCase()) {
-                case '&':
-                case '1':
+            switch (event.keyCode) {
+                case 49:
+                case 97:
                     list.forEach((li) => li.classList.remove('active'));
                     list[1].classList.add('active'); // "Normal"
                     break;
-                case 'é':
-                case '2':
+                case 50:
+                case 98:
                     list.forEach((li) => li.classList.remove('active'));
                     list[2].classList.add('active'); // "Difficult"
                     break;
-                case '"':
-                case '3':
+                case 51:
+                case 99:
                     list.forEach((li) => li.classList.remove('active'));
                     list[3].classList.add('active'); // "Hardcore"
                     break;
                 // Ajoute d'autres cas si nécessaire
             }
+
         }
     
         // Ajoute un gestionnaire d'événements pour l'événement keydown sur la fenêtre
